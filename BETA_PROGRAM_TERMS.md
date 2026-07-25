@@ -1,14 +1,14 @@
 # MuseumLog Beta Program Terms
 
 **Effective date:** July 22, 2026
-**Last updated:** July 22, 2026
+**Last updated:** July 25, 2026
 
 These Beta Program Terms supplement the MuseumLog [Terms of Service](TERMS_OF_SERVICE.md) and apply to your participation in the MuseumLog beta program distributed through Apple TestFlight (the "Beta"). If these Beta Program Terms conflict with the Terms of Service, these Beta Program Terms control for the Beta.
 
 ## 1. Eligibility
 
 - You must be **at least 18 years old** to participate in the Beta. This is stricter than the general age requirement in the Terms of Service and applies for the duration of the beta program.
-- The Beta is offered in the United States and the countries of the European Union / European Economic Area. It is not currently offered in the United Kingdom or Switzerland.
+- The Beta is offered in the United States, the countries of the European Union / European Economic Area, the United Kingdom, and Switzerland.
 - Participation is free, voluntary, and by invitation or open TestFlight enrollment. We may limit the number of participants.
 
 ## 2. Beta software — expectations
