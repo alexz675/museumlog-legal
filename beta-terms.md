@@ -1,9 +1,9 @@
 # MuseumLog Beta Program Terms
 
 **Effective date:** July 22, 2026
-**Last updated:** July 25, 2026
+**Last updated:** July 28, 2026
 
-These Beta Program Terms supplement the MuseumLog [Terms of Service](TERMS_OF_SERVICE.md) and apply to your participation in the MuseumLog beta program distributed through Apple TestFlight (the "Beta"). If these Beta Program Terms conflict with the Terms of Service, these Beta Program Terms control for the Beta.
+These Beta Program Terms supplement the MuseumLog [Terms of Service](terms) and apply to your participation in the MuseumLog beta program distributed through Apple TestFlight (the "Beta"). If these Beta Program Terms conflict with the Terms of Service, these Beta Program Terms control for the Beta.
 
 ## 1. Eligibility
 
@@ -26,10 +26,10 @@ Feedback you provide about the Beta (bug reports, suggestions, screenshots of is
 
 ## 4. Privacy
 
-Our [Privacy Policy](PRIVACY_POLICY.md) applies to the Beta. In addition:
+Our [Privacy Policy](privacy) applies to the Beta. In addition:
 
 - TestFlight itself is operated by Apple; Apple collects crash logs and usage statistics from TestFlight builds under Apple's own terms and may share crash and usage data with us if you consent through TestFlight.
-- Optional product analytics are **disabled** in the Beta. We will not enable them for European users without a genuine opt-in consent flow.
+- Optional product analytics are **opt-in** (Privacy Policy §2.3): the App asks for your consent during onboarding, you can change your answer anytime in Profile → Privacy & Data, and nothing is collected unless you expressly agree. In addition, analytics transmission is active only in builds that include an analytics key; in builds without one, no analytics are collected regardless of your choice.
 
 ## 5. Term and termination
 

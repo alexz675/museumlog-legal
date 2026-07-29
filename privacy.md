@@ -1,7 +1,7 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** July 25, 2026
+**Last updated:** July 28, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
@@ -21,9 +21,10 @@ If you do not agree with this policy, do not use the App.
 - We use your **location** (only while you use the App, and only if you grant permission) to find museums near you.
 - Photos you attach to your artwork log are stored on our servers. **Photo storage URLs are not currently access-restricted — treat logged photos as potentially accessible to anyone with the link.**
 - We store the content you create: artwork logs, personal notes, collections, favorites, and learning progress.
-- **Product analytics are opt-in.** If — and only if — you agree, we collect anonymous usage events (which screens and features you use) to improve the App. Declining changes nothing, and you can turn it off anytime in Profile → Privacy & Data.
+- **Product analytics are opt-in.** If — and only if — you agree, we collect structured usage events (which features you use and whether they worked) to improve the App. Once you sign in these are linked to your account, but they never include your photos, notes, feedback text, or location. Declining changes nothing, and you can turn it off anytime in Profile → Privacy & Data.
 - We do **not** sell your personal information.
 - You can delete your account and data in the App (Profile → Settings → Account) or by contacting us (see Section 10).
+- If you use the App **without creating an account**, we delete that anonymous account and its data after a period of inactivity — 7 days if you saved nothing, 90 days if you did (Section 6).
 - The beta is for **adults (18+)** only.
 
 ---
@@ -45,14 +46,21 @@ If you do not agree with this policy, do not use the App.
 - **Location data (with your permission).** With your consent, we access your device's approximate location while the App is in use, to find museums and art venues near you. We do not track your location in the background.
 - **Photo metadata (EXIF).** Photos you take or import may contain embedded metadata, including GPS coordinates and capture date. We read this metadata to infer where and when you saw an artwork, and we record the location associated with your artwork log along with how it was obtained (e.g., photo metadata, current device location, or your visit session).
 - **Usage counters.** We keep daily counts of your AI-powered requests (scans, content generation) to enforce fair-use limits and control costs. These counters are tied to your account identifier.
-- **Learning and interaction data.** Your progress in Learn features (lessons completed, review queue) and an append-only log of in-app interactions (e.g., which artworks you viewed) used to personalize recommendations.
+- **Learning and interaction data.** Your progress in Learn features — including a daily lesson schedule tied to your account (which of your logged artworks is featured on each local day, your progress through that lesson, and when you completed or swapped it) — and an append-only log of in-app interactions (e.g., which artworks you viewed) used to personalize recommendations.
+- **Push notification token.** If you turn notifications on (they are optional and off by default), your device obtains a push token from Expo's notification service, and we store that token with your account in order to deliver notifications to your device.
 - **Device and session data.** Authentication session tokens are stored securely on your device (see Section 7). Standard technical data (such as IP address) is processed transiently by our hosting and infrastructure providers as part of operating the service.
 
 ### 2.3 Product analytics (opt-in)
 
 With your **opt-in consent** — asked once during onboarding and changeable anytime in Profile → Privacy & Data — we collect product-analytics events through **PostHog** to understand how the App is used and where it can improve. If you decline (or simply never agree), no analytics events are collected or transmitted, and the App works identically.
 
-When you have opted in, analytics events include: which screens and features you use (for example, each onboarding step you reach), feature interactions (such as votes on the feedback board), the text of feedback-board posts you submit, app version and build, platform and device model, event timestamps, and a random analytics identifier. Analytics events are **not** linked to your name or email, and never include your artwork photos, personal notes, or device location. Your IP address is processed transiently by PostHog to receive events (and may be used to infer an approximate region). Steps you take during onboarding **before** answering the consent question are held only in the App's memory on your device and are transmitted (in order) solely if you then opt in; if you decline or close the App, they are discarded and never leave the device.
+When you have opted in, analytics events record **what you did, never what you wrote or photographed**. Each event carries a fixed event name (for example, that a scan started, completed, or failed) and a limited set of pre-approved, structured properties: platform, app version and build, which part of the App an action started from, the scan mode, which evidence tier identified an artwork, whether you had to correct the result, which type of daily Learn lesson was shown, a coarse duration range (for example "3–10 seconds" rather than an exact timing), a general error category, and small counts such as how many photos you selected. PostHog records the time it receives each event; the App does not attach its own timestamps, and analytics events carry no identifiers linking them to a specific artwork, note, or feedback post.
+
+Once you sign in, events are associated with **your account identifier** — the same random identifier your account already has in our database. This means opted-in analytics events **are linked to your account**, and you can ask us to delete them (Section 8). No other identifying field is ever attached: we do not send your name, your email address, or any profile information to PostHog.
+
+Analytics events **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback-board posts, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. We have configured PostHog so that it does not record sessions or screens, does not capture screenshots, does not record your network requests or console output, and does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive the events.
+
+Anything you do **before** answering the consent question is **discarded** — it is not stored, not queued, and not sent later. Opting in starts the record from that moment forward; it does not reach back over your earlier activity. If you sign out or delete your account, the analytics identifier on your device is reset.
 
 We do not use third-party advertising SDKs and we do not collect data for cross-app tracking.
 
@@ -78,20 +86,23 @@ Artwork recognition and content generation are the core function of the App and 
 
 | Provider | Purpose | Data sent |
 | --- | --- | --- |
-| **Anthropic** (Claude models) | Artwork recognition from images; generation and translation of art-history content; Learn content | Your scan image; artwork/artist text and context from your logs |
-| **OpenAI** (GPT models) | Artwork interpretation from images | Your scan image |
-| **Google Cloud (Vertex AI)** | Image embeddings used to match your scan against known artworks | Your scan image |
+| **OpenAI** (GPT models) | Artwork identification from images — the primary recognition engine | Your scan image(s), including any label/placard photo, and the museum context relevant to the scan |
+| **Anthropic** (Claude models) | Artwork recognition and verification from images; generation and translation of art-history content; daily Learn lessons about artworks you logged; short museum descriptions generated from the museum's own public website; automated moderation of content you publish to other users (Section 4.1) | Your scan image; artwork/artist text and context from your logs; the text of reviews and feedback posts you submit for publication |
+| **Google Cloud (Vertex AI)** | Image embeddings used to match your scan against known artworks, where visual-matching features are enabled in your build | Your scan image |
+
+When the App generates a short description of a museum, Anthropic's retrieval tooling fetches that museum's public website on our behalf; that request contains the museum's website address only, never your personal data.
 
 Scan images are transmitted to these providers either directly within the processing request or via short-lived signed links to a private, access-controlled storage area. We do not send your name, email, or account details to AI providers with your images.
 
-AI-generated descriptions of artworks are produced from retrieved sources (such as Wikipedia and museum databases) and may be stored and shown to you and, for shared canonical artworks, to other users.
+AI-generated descriptions and lessons about artworks are produced from retrieved sources (such as Wikipedia and museum databases) and may be stored and shown to you and, for shared canonical artworks, to other users. Daily Learn lessons that are instead generated from the visual analysis of your own scan (used when an artwork has no shared reference record) never include your personal notes or your photo itself, are stored keyed to your own log entry, and are shown only to you.
 
 We also use these non-AI service providers and data sources:
 
 | Provider | Purpose | Data sent |
 | --- | --- | --- |
 | **Supabase** | Database, authentication, file storage, and serverless functions (our backend) | Account data, user content, photos, usage counters |
-| **PostHog** | Opt-in product analytics (Section 2.3) | Usage events, feedback post text, app/device info, random analytics id — only after you opt in; never photos, notes, location, name, or email |
+| **Expo (Expo Application Services)** | Delivering app updates and, if you enable notifications, delivering push notifications | Standard technical data (such as IP address) when the App checks for updates; your device's push token, only if you turn notifications on |
+| **PostHog** | Opt-in product analytics (Section 2.3) | Structured usage events, app/device info, and your account identifier — only after you opt in; never photos, label text, notes, feedback text, location, name, or email |
 | **Geoapify** | Finding museums and art venues near you | Your approximate device coordinates |
 | **OpenStreetMap (Overpass API)** | Fallback nearby-venue lookup | Your approximate device coordinates |
 | **Apple Maps Server API** | Fallback nearby-venue lookup | Your approximate device coordinates |
@@ -100,6 +111,22 @@ We also use these non-AI service providers and data sources:
 | **Apple / Google sign-in** | Authentication, if you choose those sign-in methods | Handled under Apple's and Google's own privacy policies |
 
 Each provider processes data under its own privacy policy. We share only what is needed for the feature you are using.
+
+### 4.1 Automated moderation of content you publish
+
+When you publish a **community review** or post to the **feedback board**, that content is visible to other users. Before it becomes visible, it is checked automatically so that objectionable content can be filtered out, as app-store rules require.
+
+**What happens.** The check runs in two stages. The first is entirely on our own servers and uses no AI: a list of prohibited terms and simple pattern checks (for example, contact details or links). If that stage is inconclusive, the text is sent to **Anthropic** for an automated assessment of whether it harasses, threatens, or targets a person, exposes someone's private information, or is spam.
+
+**What is sent.** Only the text you submitted, whether it is a review or a feedback post, and — for reviews — the title and artist of the artwork being reviewed, so the assessment can tell that writing about a violent or explicit painting is a description of the artwork. **Your name, email address, account identifier, location, and photographs are never sent for moderation.**
+
+**What we keep.** The outcome (publish, hold for review, or do not publish), the categories it matched, a confidence score, and a fingerprint of the text. We do **not** store the AI system's reasoning or any free-text explanation about you.
+
+**What it can and cannot do.** The automated check decides whether one piece of content is published, held, or refused. It **cannot** restrict, suspend, or ban you — only a human reviewer can do that, and every such decision is recorded. Private notes and unpublished drafts are never moderated and never sent anywhere.
+
+**If you disagree.** Content that is not published stays in your account and can be edited and resubmitted. To ask a person to look at a decision, email museumlog.app@gmail.com; we will review it manually.
+
+Where the GDPR or UK GDPR applies, we rely on our legitimate interests in keeping shared spaces safe and in meeting app-store obligations (Article 6(1)(f)). This automated check does not produce legal or similarly significant effects concerning you within the meaning of Article 22, and a human decision is available on request as described above.
 
 ---
 
@@ -124,7 +151,18 @@ We do not sell personal information and have not sold personal information in th
 - **Account and content data** is retained while your account exists.
 - **Scan crop images** submitted for recognition are stored short-term in a private bucket for processing and matching.
 - **Usage counters** are kept as daily aggregates.
-- **If your account is deleted,** your profile, artwork logs, photos' database records, notes, collections, favorites, learning data, interaction logs, and usage counters are deleted (our database is configured to cascade-delete user data when the account is removed). Backups may persist for a limited period before being overwritten in the ordinary course.
+- **If your account is deleted,** your profile, artwork logs, photos' database records, notes, collections, favorites, learning data (including your daily lesson schedule and lesson content generated from your own artworks), push notification tokens, interaction logs, and usage counters are deleted (our database is configured to cascade-delete user data when the account is removed). Backups may persist for a limited period before being overwritten in the ordinary course.
+
+### Accounts created without signing up
+
+You can use the App without creating a named account; in that case we create an anonymous account identifier on your device (Section 1). Because such an account has no email address or sign-in method attached, you cannot recover it on another device and we have no way to contact you about it. We therefore delete inactive anonymous accounts, and everything attached to them, on the following schedule:
+
+- **Anonymous accounts with no saved artworks** are deleted after **7 days** of inactivity.
+- **Anonymous accounts with at least one saved artwork** are deleted after **90 days** of inactivity.
+
+Inactivity is measured from your last sign-in. Opening the App refreshes it, so an account you keep using is never removed. If you add a sign-in method — Apple, Google, or email — the account stops being anonymous and these schedules no longer apply; it is then retained like any other account, until you delete it.
+
+Deletion under this schedule removes the same data as an account deletion you request yourself, including the photos you uploaded.
 
 To request deletion, see Section 10.
 
@@ -146,6 +184,7 @@ No system is perfectly secure. If we learn of a breach affecting your personal d
 
 - **Camera, photo library, and location permissions** are optional and controlled in your device settings. Core scanning requires camera or photo access; nearby discovery requires location. The rest of the App works without them.
 - **Photo metadata:** you can disable location tagging in your device camera settings if you don't want GPS embedded in your photos.
+- **Notifications** are optional and off by default. You can turn them on in Profile settings and off again there or in your device settings at any time.
 - **Language:** set in-app; stored on your profile.
 - **Sign out** at any time; anonymous accounts are not silently recreated after an intentional sign-out.
 

@@ -1,7 +1,7 @@
 # MuseumLog Terms of Service
 
 **Effective date:** July 21, 2026
-**Last updated:** July 24, 2026
+**Last updated:** July 27, 2026
 
 These Terms of Service ("Terms") are a binding agreement between you and MuseumLog, operated by Alex Zhang ("MuseumLog," "we," "us"), governing your use of the MuseumLog mobile application and related services (the "App"). By creating an account, using scanning features (including anonymously), or otherwise using the App, you agree to these Terms and to our Privacy Policy (available in the App under Profile → Privacy & Data), which is incorporated by reference.
 
@@ -13,7 +13,7 @@ If you do not agree, do not use the App.
 
 **You must be at least 18 years old to use the App.** While MuseumLog is in its beta program, participation is limited to adults; there is no parental-consent pathway. By using the App you represent that you are 18 or older. If you are under 18, do not use the App.
 
-If you participate in the beta program (TestFlight), the [Beta Program Terms](BETA_PROGRAM_TERMS.md) also apply and control over these Terms where they conflict.
+If you participate in the beta program (TestFlight), the [Beta Program Terms](beta-terms) also apply and control over these Terms where they conflict.
 
 ## 2. Your account
 
@@ -42,11 +42,21 @@ The App relies on machine-learning systems that are **probabilistic and imperfec
 "Your Content" means photos you submit, notes, log entries, collections, and any other material you create in the App.
 
 - **You own Your Content.** These Terms do not transfer ownership to us.
-- **License to us.** You grant us a worldwide, non-exclusive, royalty-free license to host, store, reproduce, process, transmit, display (to you, and — for feedback-board posts — to other users of the App as described below), and create derivative works of Your Content **solely as needed to operate, provide, secure, and improve the App** — including transmitting your photos to the third-party AI and infrastructure providers identified in the Privacy Policy for recognition and processing. This license ends when Your Content is deleted, except for residual copies in backups for a limited period and content we must retain by law.
+- **License to us.** You grant us a worldwide, non-exclusive, royalty-free license to host, store, reproduce, process, transmit, display (to you, and — for feedback-board posts and community reviews you choose to publish — to other users of the App as described below), and create derivative works of Your Content **solely as needed to operate, provide, secure, and improve the App** — including transmitting your photos to the third-party AI and infrastructure providers identified in the Privacy Policy for recognition and processing. This license ends when Your Content is deleted, except for residual copies in backups for a limited period and content we must retain by law.
 - **Your responsibilities.** You represent that you have the necessary rights to submit Your Content, and that it does not violate law or third-party rights. In particular:
   - **Museum photography rules are your responsibility.** Many museums restrict photography of some or all works. You are solely responsible for complying with the photography policies of any venue and with applicable copyright law when photographing artworks (some exhibited works are still under copyright).
   - Do not submit photos of identifiable people without their consent, and do not submit unlawful, infringing, or abusive content.
-- **Feedback board.** Posts you make to the in-app community feedback board are visible to **all signed-in users** and are displayed without your name. Do not post personal data (yours or anyone else's), or content that is unlawful, offensive, infringing, or spam. We may remove any post and may restrict posting for violations. You can report a post or hide a contributor's content in the App; we review reports and remove violating content.
+- **Content visible to other users.** Two parts of the App publish Your Content to other people:
+  - the in-app **community feedback board**; and
+  - **community reviews**, which you may choose to publish on an artwork page. Reviews you keep private, and your personal notes, are never shown to anyone else.
+
+  Both are visible to **all signed-in users** and are displayed **without your name**. Do not post personal data (yours or anyone else's), or content that is unlawful, offensive, infringing, or spam. We may remove any post or review and may restrict posting for violations. You can report content or hide a contributor in the App; we review reports and remove violating content.
+
+- **No tolerance for objectionable content or abusive behavior.** There is **no tolerance** for objectionable content or abusive users anywhere in the App. Objectionable content includes content that is unlawful; hateful or that harasses, threatens, degrades, or targets a person or group on the basis of race, ethnicity, national origin, religion, sex, gender, gender identity, sexual orientation, age, disability, or any other protected characteristic; sexually explicit material; content that encourages self-harm or violence; content that discloses another person's private information; and spam or deceptive content.
+
+  This is about **how** you address other people, not about **what art is about**. MuseumLog is an app for discussing art, and art depicts nudity, violence, religion, sexuality, and death. Writing seriously about such a work is not objectionable content; using a review to abuse, threaten, or harass someone is.
+
+  We may remove content and suspend or terminate accounts that violate this section, at our discretion and without notice. **We aim to review reports and act on violating content within 24 hours.** To report content or a user, use the report control in the App or email museumlog.app@gmail.com.
 
 ## 6. Third-party content and services
 

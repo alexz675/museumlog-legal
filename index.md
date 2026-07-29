@@ -1,8 +1,9 @@
 # MuseumLog Legal Documents
 
-- [Privacy Policy](PRIVACY_POLICY)
-- [Terms of Service](TERMS_OF_SERVICE)
-- [Beta Program Terms](BETA_PROGRAM_TERMS)
-- [Licenses & Attributions](LEGAL_LICENSES_ATTRIBUTIONS)
+- [Privacy Policy](privacy)
+- [Terms of Service](terms)
+- [Beta Program Terms](beta-terms)
+- [Community Guidelines](community-guidelines)
+- [Licenses & Attributions](licenses)
 
 Contact: museumlog.app@gmail.com
