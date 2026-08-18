@@ -1,13 +1,13 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** July 28, 2026
+**Last updated:** August 17, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
 **Data controller:** Alex Zhang, operator and data controller for MuseumLog, based in California, United States. Contact: museumlog.app@gmail.com.
 
-**Where the App is offered:** the App's beta is offered in the **United States**, in the countries of the **European Union / European Economic Area**, in the **United Kingdom**, and in **Switzerland**. Section 9 describes your rights under the GDPR, the UK GDPR, and the Swiss Federal Act on Data Protection (FADP), and the legal bases we rely on.
+**Where the App is offered:** the App is offered in the **United States**, in the countries of the **European Union / European Economic Area**, in the **United Kingdom**, and in **Switzerland**. Section 9 describes your rights under the GDPR, the UK GDPR, and the Swiss Federal Act on Data Protection (FADP), and the legal bases we rely on.
 
 If you do not agree with this policy, do not use the App.
 
@@ -25,7 +25,7 @@ If you do not agree with this policy, do not use the App.
 - We do **not** sell your personal information.
 - You can delete your account and data in the App (Profile → Settings → Account) or by contacting us (see Section 10).
 - If you use the App **without creating an account**, we delete that anonymous account and its data after a period of inactivity — 7 days if you saved nothing, 90 days if you did (Section 6).
-- The beta is for **adults (18+)** only.
+- The App is for **adults (18+)** only.
 
 ---
 
@@ -38,7 +38,8 @@ If you do not agree with this policy, do not use the App.
 - **Artwork photos.** Photos you take with the camera or select from your photo library to identify and log artworks, including optional label/placard photos.
 - **User content.** Artwork log entries (title, artist, year, medium, description, visit date), free-text personal notes, collections, and favorites.
 - **Communications.** Anything you send us by email or support channels.
-- **Feedback board posts.** The titles and descriptions you post to the in-app community feedback board.
+- **Feedback you submit.** The titles and descriptions you submit through the in-app feedback form. Feedback goes **privately to us** (it is delivered to the developer and is not published to other users) and remains linked to your account so we can respond to reports and enforce fair-use limits.
+- **Community reviews and replies.** Reviews and replies you choose to publish on artwork pages (see Section 5).
 
 ### 2.2 Information collected automatically
 
@@ -54,11 +55,11 @@ If you do not agree with this policy, do not use the App.
 
 With your **opt-in consent** — asked once during onboarding and changeable anytime in Profile → Privacy & Data — we collect product-analytics events through **PostHog** to understand how the App is used and where it can improve. If you decline (or simply never agree), no analytics events are collected or transmitted, and the App works identically.
 
-When you have opted in, analytics events record **what you did, never what you wrote or photographed**. Each event carries a fixed event name (for example, that a scan started, completed, or failed) and a limited set of pre-approved, structured properties: platform, app version and build, which part of the App an action started from, the scan mode, which evidence tier identified an artwork, whether you had to correct the result, which type of daily Learn lesson was shown, a coarse duration range (for example "3–10 seconds" rather than an exact timing), a general error category, and small counts such as how many photos you selected. PostHog records the time it receives each event; the App does not attach its own timestamps, and analytics events carry no identifiers linking them to a specific artwork, note, or feedback post.
+When you have opted in, analytics events record **what you did, never what you wrote or photographed**. Each event carries a fixed event name (for example, that a scan started, completed, or failed) and a limited set of pre-approved, structured properties: platform, app version and build, which part of the App an action started from, the scan mode, which evidence tier identified an artwork, whether you had to correct the result, which type of daily Learn lesson was shown, a coarse duration range (for example "3–10 seconds" rather than an exact timing), a general error category, and small counts such as how many photos you selected. PostHog records the time it receives each event; the App does not attach its own timestamps, and analytics events carry no identifiers linking them to a specific artwork, note, or feedback submission.
 
 Once you sign in, events are associated with **your account identifier** — the same random identifier your account already has in our database. This means opted-in analytics events **are linked to your account**, and you can ask us to delete them (Section 8). No other identifying field is ever attached: we do not send your name, your email address, or any profile information to PostHog.
 
-Analytics events **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback-board posts, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. We have configured PostHog so that it does not record sessions or screens, does not capture screenshots, does not record your network requests or console output, and does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive the events.
+Analytics events **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback submissions, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. We have configured PostHog so that it does not record sessions or screens, does not capture screenshots, does not record your network requests or console output, and does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive the events.
 
 Anything you do **before** answering the consent question is **discarded** — it is not stored, not queued, and not sent later. Opting in starts the record from that moment forward; it does not reach back over your earlier activity. If you sign out or delete your account, the analytics identifier on your device is reset.
 
@@ -87,7 +88,7 @@ Artwork recognition and content generation are the core function of the App and 
 | Provider | Purpose | Data sent |
 | --- | --- | --- |
 | **OpenAI** (GPT models) | Artwork identification from images — the primary recognition engine | Your scan image(s), including any label/placard photo, and the museum context relevant to the scan |
-| **Anthropic** (Claude models) | Artwork recognition and verification from images; generation and translation of art-history content; daily Learn lessons about artworks you logged; short museum descriptions generated from the museum's own public website; automated moderation of content you publish to other users (Section 4.1) | Your scan image; artwork/artist text and context from your logs; the text of reviews and feedback posts you submit for publication |
+| **Anthropic** (Claude models) | Artwork recognition and verification from images; generation and translation of art-history content; daily Learn lessons about artworks you logged; short museum descriptions generated from the museum's own public website; automated moderation of reviews and replies you publish and of feedback you submit (Section 4.1) | Your scan image; artwork/artist text and context from your logs; the text of reviews, replies, and feedback you submit |
 | **Google Cloud (Vertex AI)** | Image embeddings used to match your scan against known artworks, where visual-matching features are enabled in your build | Your scan image |
 
 When the App generates a short description of a museum, Anthropic's retrieval tooling fetches that museum's public website on our behalf; that request contains the museum's website address only, never your personal data.
@@ -112,13 +113,13 @@ We also use these non-AI service providers and data sources:
 
 Each provider processes data under its own privacy policy. We share only what is needed for the feature you are using.
 
-### 4.1 Automated moderation of content you publish
+### 4.1 Automated moderation of content you submit
 
-When you publish a **community review** or post to the **feedback board**, that content is visible to other users. Before it becomes visible, it is checked automatically so that objectionable content can be filtered out, as app-store rules require.
+When you publish a **community review or reply**, that content becomes visible to other users, and app-store rules require that objectionable content be filtered before it appears. **Feedback** you submit through the in-app form is delivered privately to us rather than published, but it passes through the same automated check before delivery. In both cases the content is checked automatically before it goes anywhere.
 
 **What happens.** The check runs in two stages. The first is entirely on our own servers and uses no AI: a list of prohibited terms and simple pattern checks (for example, contact details or links). If that stage is inconclusive, the text is sent to **Anthropic** for an automated assessment of whether it harasses, threatens, or targets a person, exposes someone's private information, or is spam.
 
-**What is sent.** Only the text you submitted, whether it is a review or a feedback post, and — for reviews — the title and artist of the artwork being reviewed, so the assessment can tell that writing about a violent or explicit painting is a description of the artwork. **Your name, email address, account identifier, location, and photographs are never sent for moderation.**
+**What is sent.** Only the text you submitted, whether it is a review, a reply, or a feedback submission, and — for reviews — the title and artist of the artwork being reviewed, so the assessment can tell that writing about a violent or explicit painting is a description of the artwork. **Your name, email address, account identifier, location, and photographs are never sent for moderation.**
 
 **What we keep.** The outcome (publish, hold for review, or do not publish), the categories it matched, a confidence score, and a fingerprint of the text. We do **not** store the AI system's reasoning or any free-text explanation about you.
 
@@ -138,7 +139,7 @@ We share personal information only:
 - **If required by law**, such as in response to a valid legal request.
 - **In a business transfer**, such as a merger or acquisition, in which case this policy will continue to apply to previously collected data.
 - **With your direction**, if you explicitly share content.
-- **Feedback board.** If you post to the in-app community feedback board, the text of your post is visible to all signed-in users of the App. Posts are displayed **without your name or profile**; internally each post remains linked to your account for moderation, fair-use limits, and handling of reports.
+- **Community reviews and replies.** If you publish a review or reply on an artwork page, its text is visible to all signed-in users of the App (and may be surfaced in the App's Discover area). Reviews and replies are displayed **without your name or profile**; internally each remains linked to your account for moderation, fair-use limits, and handling of reports. Feedback you submit through the in-app form is **not** published to other users — it goes privately to us.
 
 **Important note on photos:** artwork photos attached to your log are stored in a storage bucket whose URLs are publicly readable. This means anyone who obtains a photo's URL can view that photo without logging in. Photo URLs are long and randomized, but you should not attach photos you would not want to be publicly accessible.
 
@@ -245,7 +246,7 @@ You may delete your account and associated data at any time using **Delete Accou
 
 ## 11. Children's privacy
 
-The App is not directed to children, and **during the beta program you must be at least 18 years old to use it** (see the Terms of Service and Beta Program Terms). We do not knowingly collect personal information from anyone under 18. If you believe someone under 18 has provided us personal information, contact museumlog.app@gmail.com and we will delete it.
+The App is not directed to children, and **you must be at least 18 years old to use it** (see the Terms of Service). We do not knowingly collect personal information from anyone under 18. If you believe someone under 18 has provided us personal information, contact museumlog.app@gmail.com and we will delete it.
 
 ---
 

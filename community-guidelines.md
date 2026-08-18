@@ -1,13 +1,13 @@
 # MuseumLog Community Guidelines
 
-**Last updated:** July 27, 2026
+**Last updated:** August 17, 2026
 
-MuseumLog has two places where what you write is visible to other people:
-**community reviews** on artwork pages, and the **feedback board**. Your private
-notes, your logs, and any review you keep private are never shown to anyone
-else.
+MuseumLog has one place where what you write is visible to other people:
+**community reviews and replies** on artwork pages (also surfaced in Discover).
+Your private notes, your logs, any review you keep private, and feedback you
+send us through the in-app form are never shown to anyone else.
 
-These guidelines say what belongs in those two places. They sit alongside the
+These guidelines say what belongs there. They sit alongside the
 [Terms of Service](terms); where the two overlap, the Terms
 control.
 
@@ -75,7 +75,8 @@ Most reviews publish immediately. Some are checked first.
 Nothing is ever deleted because of a moderation decision. Content that cannot
 be published stays in your account, editable.
 
-We aim to act on reports within **24 hours**.
+We aim to act on reports promptly — within **72 hours**, and usually much
+sooner.
 
 ---
 
@@ -86,7 +87,7 @@ you straight away and sends it to us. The person you reported is never told who
 reported them.
 
 **Block** anyone you would rather not see. Blocking hides all of that person's
-content from you — reviews *and* feedback posts — everywhere in the app. They
+content from you — reviews *and* replies — everywhere in the app. They
 are not notified.
 
 Reporting someone does not remove their content on its own. A person reviews it.

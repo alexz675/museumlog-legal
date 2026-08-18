@@ -1,7 +1,7 @@
 # MuseumLog Terms of Service
 
 **Effective date:** July 21, 2026
-**Last updated:** July 27, 2026
+**Last updated:** August 17, 2026
 
 These Terms of Service ("Terms") are a binding agreement between you and MuseumLog, operated by Alex Zhang ("MuseumLog," "we," "us"), governing your use of the MuseumLog mobile application and related services (the "App"). By creating an account, using scanning features (including anonymously), or otherwise using the App, you agree to these Terms and to our Privacy Policy (available in the App under Profile → Privacy & Data), which is incorporated by reference.
 
@@ -11,9 +11,7 @@ If you do not agree, do not use the App.
 
 ## 1. Eligibility
 
-**You must be at least 18 years old to use the App.** While MuseumLog is in its beta program, participation is limited to adults; there is no parental-consent pathway. By using the App you represent that you are 18 or older. If you are under 18, do not use the App.
-
-If you participate in the beta program (TestFlight), the [Beta Program Terms](beta-terms) also apply and control over these Terms where they conflict.
+**You must be at least 18 years old to use the App.** The App is offered to adults only; there is no parental-consent pathway. By using the App you represent that you are 18 or older. If you are under 18, do not use the App.
 
 ## 2. Your account
 
@@ -42,21 +40,19 @@ The App relies on machine-learning systems that are **probabilistic and imperfec
 "Your Content" means photos you submit, notes, log entries, collections, and any other material you create in the App.
 
 - **You own Your Content.** These Terms do not transfer ownership to us.
-- **License to us.** You grant us a worldwide, non-exclusive, royalty-free license to host, store, reproduce, process, transmit, display (to you, and — for feedback-board posts and community reviews you choose to publish — to other users of the App as described below), and create derivative works of Your Content **solely as needed to operate, provide, secure, and improve the App** — including transmitting your photos to the third-party AI and infrastructure providers identified in the Privacy Policy for recognition and processing. This license ends when Your Content is deleted, except for residual copies in backups for a limited period and content we must retain by law.
+- **License to us.** You grant us a worldwide, non-exclusive, royalty-free license to host, store, reproduce, process, transmit, display (to you, and — for community reviews and replies you choose to publish — to other users of the App as described below), and create derivative works of Your Content **solely as needed to operate, provide, secure, and improve the App** — including transmitting your photos to the third-party AI and infrastructure providers identified in the Privacy Policy for recognition and processing. This license ends when Your Content is deleted, except for residual copies in backups for a limited period and content we must retain by law.
 - **Your responsibilities.** You represent that you have the necessary rights to submit Your Content, and that it does not violate law or third-party rights. In particular:
   - **Museum photography rules are your responsibility.** Many museums restrict photography of some or all works. You are solely responsible for complying with the photography policies of any venue and with applicable copyright law when photographing artworks (some exhibited works are still under copyright).
   - Do not submit photos of identifiable people without their consent, and do not submit unlawful, infringing, or abusive content.
-- **Content visible to other users.** Two parts of the App publish Your Content to other people:
-  - the in-app **community feedback board**; and
-  - **community reviews**, which you may choose to publish on an artwork page. Reviews you keep private, and your personal notes, are never shown to anyone else.
+- **Content visible to other users.** One part of the App publishes Your Content to other people: **community reviews and replies**, which you may choose to publish on an artwork page (and which may also be surfaced in the App's Discover area). Reviews you keep private, and your personal notes, are never shown to anyone else. Feedback you submit through the in-app feedback form goes **privately to us** and is not published to other users.
 
-  Both are visible to **all signed-in users** and are displayed **without your name**. Do not post personal data (yours or anyone else's), or content that is unlawful, offensive, infringing, or spam. We may remove any post or review and may restrict posting for violations. You can report content or hide a contributor in the App; we review reports and remove violating content.
+  Published reviews and replies are visible to **all signed-in users** and are displayed **without your name**. Do not post personal data (yours or anyone else's), or content that is unlawful, offensive, infringing, or spam. We may remove any review or reply and may restrict posting for violations. You can report content or hide a contributor in the App; we review reports and remove violating content.
 
 - **No tolerance for objectionable content or abusive behavior.** There is **no tolerance** for objectionable content or abusive users anywhere in the App. Objectionable content includes content that is unlawful; hateful or that harasses, threatens, degrades, or targets a person or group on the basis of race, ethnicity, national origin, religion, sex, gender, gender identity, sexual orientation, age, disability, or any other protected characteristic; sexually explicit material; content that encourages self-harm or violence; content that discloses another person's private information; and spam or deceptive content.
 
   This is about **how** you address other people, not about **what art is about**. MuseumLog is an app for discussing art, and art depicts nudity, violence, religion, sexuality, and death. Writing seriously about such a work is not objectionable content; using a review to abuse, threaten, or harass someone is.
 
-  We may remove content and suspend or terminate accounts that violate this section, at our discretion and without notice. **We aim to review reports and act on violating content within 24 hours.** To report content or a user, use the report control in the App or email museumlog.app@gmail.com.
+  We may remove content and suspend or terminate accounts that violate this section, at our discretion and without notice. **We aim to review reports promptly and to act on violating content within 72 hours of a report, and usually much sooner.** To report content or a user, use the report control in the App or email museumlog.app@gmail.com.
 
 ## 6. Third-party content and services
 
@@ -79,9 +75,20 @@ You agree not to:
 
 We grant you a personal, limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for personal non-commercial use, in accordance with these Terms and the applicable app-store rules. All rights not expressly granted are reserved. The App, its design, software, and content we or our licensors provide are protected by intellectual-property laws.
 
-## 9. Fees
+## 9. Fees and purchases
 
-The App is currently free of charge. We may introduce paid features or subscriptions in the future; if we do, pricing and payment terms will be presented before you are charged, purchases will be processed by the applicable app store, and these Terms will be updated accordingly.
+The App offers a free tier and optional paid upgrades, sold as in-app purchases processed by Apple through the App Store. The price in your local currency is always shown in the App before you buy. The current offerings are:
+
+- **MuseumLog Premium — Annual**: an **auto-renewing subscription** with a subscription period of **one (1) year** that unlocks the Premium features presented on the purchase screen (including AI artwork scanning and generated learning content). Where an introductory free trial is offered, its length is shown on the purchase screen before you subscribe. **Payment is charged to your Apple Account at confirmation of purchase (or at the end of any free trial). The subscription renews automatically for successive one-year periods at the then-current price unless you cancel at least 24 hours before the end of the current period.** You can manage or cancel the subscription at any time in your device's Settings → your Apple Account → Subscriptions; deleting the App does not cancel a subscription.
+- **MuseumLog Premium — Lifetime**: a **one-time purchase** (not a subscription — it never renews and you are never charged again) that unlocks Premium features for as long as the App is offered.
+- **Capacity packs (+500 artworks)**: a **one-time purchase** that permanently adds 500 artwork saves to a free account's storage capacity. Packs can be purchased more than once and stack. **Purchased capacity does not expire**, and if a subscription lapses your capacity (including purchased packs) is unaffected.
+
+Additional purchase terms:
+
+- **"Lifetime," "yours until the end of time," and similar wording** describes the lifetime of the MuseumLog service: the purchase never expires, never renews, and costs nothing further, for as long as the App is offered. It is not a guarantee that the service will operate forever (see Sections 3 and 11).
+- **Purchases attach to your MuseumLog account.** A purchase is activated on the MuseumLog account that is signed in when it is validated, and a purchase first activated on one account cannot be re-activated on a different account. Keep access to that account (adding a sign-in method to an anonymous account preserves it). Use **Restore Purchases** (in Profile, or on the purchase screen) on the owning account and the same Apple Account to recover a subscription or lifetime purchase after a reinstall; capacity packs are consumable purchases whose capacity is already banked on the account, so they do not appear in a restore.
+- **Billing and refunds are handled by Apple** under Apple's terms; we do not process payments and cannot issue refunds directly. To request a refund, use Apple's refund process (reportaproblem.apple.com). If Apple refunds a purchase, the corresponding entitlement is removed: a refunded subscription or lifetime purchase ends Premium access, and a refunded capacity pack removes the capacity it added (never below the free tier's base capacity). Content you already logged always remains viewable.
+- If we retire a paid feature or the App itself, mandatory consumer-protection rights in your jurisdiction are unaffected.
 
 ## 10. Feedback
 
