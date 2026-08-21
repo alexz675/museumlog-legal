@@ -1,7 +1,7 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** August 17, 2026
+**Last updated:** August 21, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
@@ -47,6 +47,7 @@ If you do not agree with this policy, do not use the App.
 - **Location data (with your permission).** With your consent, we access your device's approximate location while the App is in use, to find museums and art venues near you. We do not track your location in the background.
 - **Photo metadata (EXIF).** Photos you take or import may contain embedded metadata, including GPS coordinates and capture date. We read this metadata to infer where and when you saw an artwork, and we record the location associated with your artwork log along with how it was obtained (e.g., photo metadata, current device location, or your visit session).
 - **Usage counters.** We keep daily counts of your AI-powered requests (scans, content generation) to enforce fair-use limits and control costs. These counters are tied to your account identifier.
+- **Purchase and entitlement records.** If you buy a subscription, a lifetime upgrade, or a capacity pack, Apple processes the payment and we never see your payment card or billing details. To unlock what you bought, we store a record of the App Store transaction (Apple's transaction identifier, the product purchased, whether it was a subscription or a one-time purchase, and the date we processed it) together with your account identifier, and we keep your current entitlement on your profile (plan, any subscription expiry date, and your artwork capacity). When you purchase, your account identifier is sent to Apple as the purchase's app account token so the transaction can be matched to your account; Apple also notifies our server of renewals, expirations, cancellations, and refunds for that transaction. We do not receive your name, address, or payment method from Apple.
 - **Learning and interaction data.** Your progress in Learn features — including a daily lesson schedule tied to your account (which of your logged artworks is featured on each local day, your progress through that lesson, and when you completed or swapped it) — and an append-only log of in-app interactions (e.g., which artworks you viewed) used to personalize recommendations.
 - **Push notification token.** If you turn notifications on (they are optional and off by default), your device obtains a push token from Expo's notification service, and we store that token with your account in order to deliver notifications to your device.
 - **Device and session data.** Authentication session tokens are stored securely on your device (see Section 7). Standard technical data (such as IP address) is processed transiently by our hosting and infrastructure providers as part of operating the service.
@@ -73,6 +74,7 @@ We do not use third-party advertising SDKs and we do not collect data for cross-
 - **To find museums near you** when you use nearby-discovery features.
 - **To personalize** Learn content and recommendations based on your logged artworks and interactions.
 - **To localize** the App and generated content into your preferred language.
+- **To deliver and maintain your purchases:** verifying App Store transactions, unlocking what you bought, and keeping your entitlement current when Apple reports a renewal, cancellation, or refund.
 - **To enforce fair-use limits** on AI-powered features and protect the service from abuse.
 - **To maintain security,** debug problems, and operate the service.
 - **To communicate with you** about your account (e.g., email confirmation, password reset).
@@ -107,6 +109,7 @@ We also use these non-AI service providers and data sources:
 | **Geoapify** | Finding museums and art venues near you | Your approximate device coordinates |
 | **OpenStreetMap (Overpass API)** | Fallback nearby-venue lookup | Your approximate device coordinates |
 | **Apple Maps Server API** | Fallback nearby-venue lookup | Your approximate device coordinates |
+| **Apple App Store** (in-app purchases) | Processing payments and verifying purchases (Section 2.2) | Your account identifier, attached to the purchase as its app account token; transaction identifiers. Payment details are handled by Apple under Apple's privacy policy and never reach us |
 | **Wikipedia / Wikimedia / Wikidata** | Retrieving factual information and public images about artworks and artists | Artwork/artist names only — no personal data |
 | **Art Institute of Chicago API** and other museum open-data sources | Artwork reference data and images | Artwork queries only — no personal data |
 | **Apple / Google sign-in** | Authentication, if you choose those sign-in methods | Handled under Apple's and Google's own privacy policies |
@@ -152,7 +155,8 @@ We do not sell personal information and have not sold personal information in th
 - **Account and content data** is retained while your account exists.
 - **Scan crop images** submitted for recognition are stored short-term in a private bucket for processing and matching.
 - **Usage counters** are kept as daily aggregates.
-- **If your account is deleted,** your profile, artwork logs, photos' database records, notes, collections, favorites, learning data (including your daily lesson schedule and lesson content generated from your own artworks), push notification tokens, interaction logs, and usage counters are deleted (our database is configured to cascade-delete user data when the account is removed). Backups may persist for a limited period before being overwritten in the ordinary course.
+- **Purchase and entitlement records** are retained while your account exists, so that a purchase is never granted twice and your entitlement can be restored.
+- **If your account is deleted,** your profile, artwork logs, photos' database records, notes, collections, favorites, learning data (including your daily lesson schedule and lesson content generated from your own artworks), push notification tokens, interaction logs, usage counters, and purchase records are deleted (our database is configured to cascade-delete user data when the account is removed). Backups may persist for a limited period before being overwritten in the ordinary course.
 
 ### Accounts created without signing up
 
@@ -240,7 +244,7 @@ To exercise any right, contact museumlog.app@gmail.com. We may need to verify yo
 
 ## 10. Account deletion
 
-You may delete your account and associated data at any time using **Delete Account** in the App (Profile → Settings → Account), or by emailing museumlog.app@gmail.com from your account email with the subject "Delete my account." Deletion removes your profile and user content as described in Section 6.
+You may delete your account and associated data at any time using **Delete Account** in the App (Profile → Settings → Account), or by emailing museumlog.app@gmail.com from your account email with the subject "Delete my account." Deletion removes your profile and user content as described in Section 6. Deleting your account does not cancel an active subscription (manage or cancel it in your Apple ID settings), and purchases tied to the deleted account cannot be transferred to a new account. Refunds are handled by Apple under its policies.
 
 ---
 
