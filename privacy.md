@@ -15,13 +15,14 @@ If you do not agree with this policy, do not use the App.
 
 ## 1. Summary (plain language)
 
-- We collect your **account information** (email, name, avatar, language preference) when you sign up.
+- We collect your **account information** (email, name, avatar, language preference, and — if you choose one — your stated reason for using the App) when you sign up.
 - You can use core features **without creating a named account**; in that case we create an anonymous account identifier on your device.
 - When you scan an artwork, **your photo is sent to third-party AI providers** (Anthropic, OpenAI, Google Cloud) to identify the artwork. This is the core function of the App.
 - We use your **location** (only while you use the App, and only if you grant permission) to find museums near you.
 - Photos you attach to your artwork log are stored on our servers. **Photo storage URLs are not currently access-restricted — treat logged photos as potentially accessible to anyone with the link.**
 - We store the content you create: artwork logs, personal notes, collections, favorites, and learning progress.
 - **Product analytics are opt-in.** If — and only if — you agree, we collect structured usage events (which features you use and whether they worked) to improve the App. Once you sign in these are linked to your account, but they never include your photos, notes, feedback text, or location. Declining changes nothing, and you can turn it off anytime in Profile → Privacy & Data.
+- If you opt in to analytics, we may also record **session replays** of your in-app interactions (a visual reconstruction of screens you visit). Text you type and images are masked in these recordings, and they are processed by our analytics provider under the same opt-in.
 - We do **not** sell your personal information.
 - You can delete your account and data in the App (Profile → Settings → Account) or by contacting us (see Section 10).
 - If you use the App **without creating an account**, we delete that anonymous account and its data after a period of inactivity — 7 days if you saved nothing, 90 days if you did (Section 6).
