@@ -1,7 +1,7 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** August 21, 2026
+**Last updated:** September 11, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
@@ -51,6 +51,7 @@ If you do not agree with this policy, do not use the App.
 - **Purchase and entitlement records.** If you buy a subscription, a lifetime upgrade, or a capacity pack, Apple processes the payment and we never see your payment card or billing details. To unlock what you bought, we store a record of the App Store transaction (Apple's transaction identifier, the product purchased, whether it was a subscription or a one-time purchase, and the date we processed it) together with your account identifier, and we keep your current entitlement on your profile (plan, any subscription expiry date, and your artwork capacity). When you purchase, your account identifier is sent to Apple as the purchase's app account token so the transaction can be matched to your account; Apple also notifies our server of renewals, expirations, cancellations, and refunds for that transaction. We do not receive your name, address, or payment method from Apple.
 - **Learning and interaction data.** Your progress in Learn features — including a daily lesson schedule tied to your account (which of your logged artworks is featured on each local day, your progress through that lesson, and when you completed or swapped it) — and an append-only log of in-app interactions (e.g., which artworks you viewed) used to personalize recommendations.
 - **Push notification token.** If you turn notifications on (they are optional and off by default), your device obtains a push token from Expo's notification service, and we store that token with your account in order to deliver notifications to your device.
+- **Crash and diagnostic data.** If the App crashes or hits an unexpected error, a crash report is sent to **Sentry**, our crash-reporting processor, so we can find and fix the fault. A report contains the technical state of the App at the time (the error, the code path that failed, app version and update identifier, device model and OS version, and free memory). It does **not** contain your name, email address, account identifier, photos, notes, location, or anything you typed, and it is not linked to your account. This is not product analytics: it is not affected by the analytics opt-in in Section 2.3 and cannot be switched off separately from the App, because it exists only to report faults in the App itself.
 - **Device and session data.** Authentication session tokens are stored securely on your device (see Section 7). Standard technical data (such as IP address) is processed transiently by our hosting and infrastructure providers as part of operating the service.
 
 ### 2.3 Product analytics (opt-in)
@@ -61,7 +62,7 @@ When you have opted in, analytics events record **what you did, never what you w
 
 Once you sign in, events are associated with **your account identifier** — the same random identifier your account already has in our database. This means opted-in analytics events **are linked to your account**, and you can ask us to delete them (Section 8). No other identifying field is ever attached: we do not send your name, your email address, or any profile information to PostHog.
 
-Analytics events **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback submissions, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. We have configured PostHog so that it does not record sessions or screens, does not capture screenshots, does not record your network requests or console output, and does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive the events.
+Analytics events and replays **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback submissions, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. Session replay reconstructs opted-in app screens while masking all text inputs, images, and sandboxed system views. It does not record network requests or console output, and PostHog does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive analytics data.
 
 Anything you do **before** answering the consent question is **discarded** — it is not stored, not queued, and not sent later. Opting in starts the record from that moment forward; it does not reach back over your earlier activity. If you sign out or delete your account, the analytics identifier on your device is reset.
 
@@ -106,6 +107,7 @@ We also use these non-AI service providers and data sources:
 | --- | --- | --- |
 | **Supabase** | Database, authentication, file storage, and serverless functions (our backend) | Account data, user content, photos, usage counters |
 | **Expo (Expo Application Services)** | Delivering app updates and, if you enable notifications, delivering push notifications | Standard technical data (such as IP address) when the App checks for updates; your device's push token, only if you turn notifications on |
+| **Sentry** | Crash and error reporting (Section 2.2) | Technical crash reports: error, failing code path, app version and update identifier, device model and OS version — never photos, notes, text you typed, location, or an account identifier |
 | **PostHog** | Opt-in product analytics (Section 2.3) | Structured usage events, app/device info, and your account identifier — only after you opt in; never photos, label text, notes, feedback text, location, name, or email |
 | **Geoapify** | Finding museums and art venues near you | Your approximate device coordinates |
 | **OpenStreetMap (Overpass API)** | Fallback nearby-venue lookup | Your approximate device coordinates |
