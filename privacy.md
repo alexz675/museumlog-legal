@@ -1,7 +1,7 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** September 11, 2026
+**Last updated:** September 13, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
@@ -23,6 +23,7 @@ If you do not agree with this policy, do not use the App.
 - We store the content you create: artwork logs, personal notes, collections, favorites, and learning progress.
 - **Product analytics are opt-in.** If — and only if — you agree, we collect structured usage events (which features you use and whether they worked) to improve the App. Once you sign in these are linked to your account, but they never include your photos, notes, feedback text, or location. Declining changes nothing, and you can turn it off anytime in Profile → Privacy & Data.
 - If you opt in to analytics, we may also record **session replays** of your in-app interactions (a visual reconstruction of screens you visit). Text you type and images are masked in these recordings, and they are processed by our analytics provider under the same opt-in.
+- To measure whether our own ads on Facebook and Instagram lead to installs, the App sends Meta a few **app events** (App installed, App opened, sign-up completed, purchase completed) together with basic device information — but **no tracking identifier**: we do not use Apple's tracking permission, we do not collect the advertising identifier (IDFA), and these events never include your name, email, photos, notes, or location (Section 2.2).
 - We do **not** sell your personal information.
 - You can delete your account and data in the App (Profile → Settings → Account) or by contacting us (see Section 10).
 - If you use the App **without creating an account**, we delete that anonymous account and its data after a period of inactivity — 7 days if you saved nothing, 90 days if you did (Section 6).
@@ -52,6 +53,7 @@ If you do not agree with this policy, do not use the App.
 - **Learning and interaction data.** Your progress in Learn features — including a daily lesson schedule tied to your account (which of your logged artworks is featured on each local day, your progress through that lesson, and when you completed or swapped it) — and an append-only log of in-app interactions (e.g., which artworks you viewed) used to personalize recommendations.
 - **Push notification token.** If you turn notifications on (they are optional and off by default), your device obtains a push token from Expo's notification service, and we store that token with your account in order to deliver notifications to your device.
 - **Crash and diagnostic data.** If the App crashes or hits an unexpected error, a crash report is sent to **Sentry**, our crash-reporting processor, so we can find and fix the fault. A report contains the technical state of the App at the time (the error, the code path that failed, app version and update identifier, device model and OS version, and free memory). It does **not** contain your name, email address, account identifier, photos, notes, location, or anything you typed, and it is not linked to your account. This is not product analytics: it is not affected by the analytics opt-in in Section 2.3 and cannot be switched off separately from the App, because it exists only to report faults in the App itself.
+- **Advertising measurement (Meta).** To measure whether our own advertising on Meta platforms (Facebook and Instagram) leads to App installs, the App includes the Meta (Facebook) SDK. It sends **Meta Platforms** a small set of app events: that the App was installed and opened, that a new account finished sign-up (with the sign-in method used, such as "apple" or "email"), and that a purchase was completed (the product identifier and, when known, its price and currency). These events carry standard app and device information (app version, device model and OS version, language, time zone, and — transiently — your IP address). They do **not** include your name, email address, account identifier, photos, notes, wall-label text, location, or anything you type. We do **not** request permission to track you under Apple's App Tracking Transparency framework, we do **not** collect the device advertising identifier (IDFA), and the SDK's advertiser-tracking setting is switched off; attribution relies on Apple's SKAdNetwork and Meta's aggregated, privacy-preserving measurement instead. We also enable Meta's "Limited Data Use" setting, under which Meta processes these events as our service provider for residents of U.S. states with applicable privacy laws. This measurement is not part of the opt-in product analytics in Section 2.3 and cannot be switched off separately from the App; if you object to it, contact us (Section 14) or do not install the App.
 - **Device and session data.** Authentication session tokens are stored securely on your device (see Section 7). Standard technical data (such as IP address) is processed transiently by our hosting and infrastructure providers as part of operating the service.
 
 ### 2.3 Product analytics (opt-in)
@@ -66,7 +68,7 @@ Analytics events and replays **never** include: your artwork photos or any image
 
 Anything you do **before** answering the consent question is **discarded** — it is not stored, not queued, and not sent later. Opting in starts the record from that moment forward; it does not reach back over your earlier activity. If you sign out or delete your account, the analytics identifier on your device is reset.
 
-We do not use third-party advertising SDKs and we do not collect data for cross-app tracking.
+The Meta SDK described in Section 2.2 measures our own advertising only; it is not part of product analytics, and we do not collect data for cross-app tracking (no advertising identifier, no App Tracking Transparency tracking).
 
 ---
 
@@ -80,8 +82,9 @@ We do not use third-party advertising SDKs and we do not collect data for cross-
 - **To enforce fair-use limits** on AI-powered features and protect the service from abuse.
 - **To maintain security,** debug problems, and operate the service.
 - **To communicate with you** about your account (e.g., email confirmation, password reset).
+- **To measure our own advertising:** counting installs, sign-ups, and purchases that follow our ads on Meta platforms (Section 2.2), without any tracking identifier.
 
-We do not use your personal information for third-party advertising, and we do not sell it.
+We do not use your personal information to show you third-party advertising, and we do not sell it.
 
 ---
 
@@ -108,6 +111,7 @@ We also use these non-AI service providers and data sources:
 | **Supabase** | Database, authentication, file storage, and serverless functions (our backend) | Account data, user content, photos, usage counters |
 | **Expo (Expo Application Services)** | Delivering app updates and, if you enable notifications, delivering push notifications | Standard technical data (such as IP address) when the App checks for updates; your device's push token, only if you turn notifications on |
 | **Sentry** | Crash and error reporting (Section 2.2) | Technical crash reports: error, failing code path, app version and update identifier, device model and OS version — never photos, notes, text you typed, location, or an account identifier |
+| **Meta Platforms** | Measuring our own advertising (Section 2.2) | App installed, App opened, sign-up completed, purchase completed (product identifier and price), with app and device information — never photos, notes, text you typed, location, name, email, account identifier, or the device advertising identifier |
 | **PostHog** | Opt-in product analytics (Section 2.3) | Structured usage events, app/device info, and your account identifier — only after you opt in; never photos, label text, notes, feedback text, location, name, or email |
 | **Geoapify** | Finding museums and art venues near you | Your approximate device coordinates |
 | **OpenStreetMap (Overpass API)** | Fallback nearby-venue lookup | Your approximate device coordinates |
@@ -149,7 +153,7 @@ We share personal information only:
 
 **Important note on photos:** artwork photos attached to your log are stored in a storage bucket whose URLs are publicly readable. This means anyone who obtains a photo's URL can view that photo without logging in. Photo URLs are long and randomized, but you should not attach photos you would not want to be publicly accessible.
 
-We do not sell personal information and have not sold personal information in the preceding 12 months. We do not "share" personal information for cross-context behavioral advertising as defined by California law.
+We do not sell personal information and have not sold personal information in the preceding 12 months. We do not "share" personal information for cross-context behavioral advertising as defined by California law: the advertising-measurement events sent to Meta (Section 2.2) carry no tracking identifier and are processed by Meta as our service provider under its Limited Data Use terms, not to build advertising profiles of you across other apps or websites.
 
 ---
 
@@ -216,6 +220,7 @@ If you are in the EU/EEA, the data controller is **Alex Zhang, operator and data
 | Personalizing Learn content from your in-app activity | Performance of a contract |
 | Security, abuse prevention, and fair-use limits | Legitimate interests (protecting the service and all users; assessment available on request) |
 | Essential operational logging | Legitimate interests |
+| Measuring our own advertising with identifier-free app events sent to Meta (Section 2.2) | Legitimate interests (knowing whether our advertising works; no tracking identifier, no profiling by us; you may object at any time — Section 14) |
 | Optional product analytics (Section 2.3) | Consent — asked during onboarding, off unless you agree, withdrawable anytime via the permanent toggle in Profile → Privacy & Data |
 | Responding to support and rights requests; legal compliance | Contract / legal obligation |
 
@@ -270,6 +275,7 @@ For these transfers we rely on the safeguards recognized under Chapter V of the 
 | OpenAI | Processor | Data processing addendum incorporating the EU Standard Contractual Clauses; OpenAI does not train models on API data by default |
 | Google Cloud (Vertex AI) | Processor | Certified under the EU-U.S. Data Privacy Framework; Cloud Data Processing Addendum with EU Standard Contractual Clauses |
 | Geoapify | Processor | EU-established provider (Geoapify GmbH, Germany) with EU hosting — no third-country transfer by us |
+| Meta Platforms (advertising measurement, Section 2.2) | Processor | Certified under the EU-U.S. Data Privacy Framework; Meta's Business Tools data processing terms incorporating the EU Standard Contractual Clauses |
 | PostHog (opt-in analytics only) | Processor | Data processing agreement incorporating the EU Standard Contractual Clauses (US hosting) |
 
 Requests to Wikipedia, Wikidata, and museum open-data APIs contain artwork queries only, not your personal data.
