@@ -1,7 +1,7 @@
 # MuseumLog Privacy Policy
 
 **Effective date:** July 21, 2026
-**Last updated:** September 13, 2026
+**Last updated:** September 14, 2026
 
 This Privacy Policy explains how MuseumLog collects, uses, shares, and protects information when you use the MuseumLog mobile application (the "App").
 
@@ -22,7 +22,7 @@ If you do not agree with this policy, do not use the App.
 - Photos you attach to your artwork log are stored on our servers. **Photo storage URLs are not currently access-restricted — treat logged photos as potentially accessible to anyone with the link.**
 - We store the content you create: artwork logs, personal notes, collections, favorites, and learning progress.
 - **Product analytics are opt-in.** If — and only if — you agree, we collect structured usage events (which features you use and whether they worked) to improve the App. Once you sign in these are linked to your account, but they never include your photos, notes, feedback text, or location. Declining changes nothing, and you can turn it off anytime in Profile → Privacy & Data.
-- If you opt in to analytics, we may also record **session replays** of your in-app interactions (a visual reconstruction of screens you visit). Text you type and images are masked in these recordings, and they are processed by our analytics provider under the same opt-in.
+- If you opt in to analytics, we may also record **session replays** of your in-app interactions (a visual reconstruction of screens you visit). Your email address, name, profile photo, passwords, and feedback text are masked in these recordings. Other screen content, such as artwork details, artwork photos, and notes, may be visible. Recordings are processed by our analytics provider under the same opt-in, including with AI tools that help us find bugs and confusing screens.
 - To measure whether our own ads on Facebook and Instagram lead to installs, the App sends Meta a few **app events** (App installed, App opened, sign-up completed, purchase completed) together with basic device information — but **no tracking identifier**: we do not use Apple's tracking permission, we do not collect the advertising identifier (IDFA), and these events never include your name, email, photos, notes, or location (Section 2.2).
 - We do **not** sell your personal information.
 - You can delete your account and data in the App (Profile → Settings → Account) or by contacting us (see Section 10).
@@ -64,7 +64,9 @@ When you have opted in, analytics events record **what you did, never what you w
 
 Once you sign in, events are associated with **your account identifier** — the same random identifier your account already has in our database. This means opted-in analytics events **are linked to your account**, and you can ask us to delete them (Section 8). No other identifying field is ever attached: we do not send your name, your email address, or any profile information to PostHog.
 
-Analytics events and replays **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback submissions, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form. Session replay reconstructs opted-in app screens while masking all text inputs, images, and sandboxed system views. It does not record network requests or console output, and PostHog does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive analytics data.
+Analytics events **never** include: your artwork photos or any image data, text read from wall labels, your personal notes, the text of feedback submissions, your location or GPS coordinates, storage links to your photos, authentication tokens, or anything you type in free-form.
+
+**Session replays** work differently, because they reconstruct the screens you see. Anything shown on screen may be visible in a replay, including artwork details, artwork photos, notes, museum names, and maps. Replays always mask your email address, your name, your profile photo, password fields, the text of feedback submissions, and sandboxed system views (such as the system photo picker). We use replays to find bugs and confusing screens; PostHog may analyze them on our behalf with AI models (currently Google Gemini, provided through PostHog). Replay does not record network requests or console output, and PostHog does not infer your location from your IP address. Your IP address is still processed transiently by PostHog in order to receive analytics data.
 
 Anything you do **before** answering the consent question is **discarded** — it is not stored, not queued, and not sent later. Opting in starts the record from that moment forward; it does not reach back over your earlier activity. If you sign out or delete your account, the analytics identifier on your device is reset.
 
@@ -112,7 +114,7 @@ We also use these non-AI service providers and data sources:
 | **Expo (Expo Application Services)** | Delivering app updates and, if you enable notifications, delivering push notifications | Standard technical data (such as IP address) when the App checks for updates; your device's push token, only if you turn notifications on |
 | **Sentry** | Crash and error reporting (Section 2.2) | Technical crash reports: error, failing code path, app version and update identifier, device model and OS version — never photos, notes, text you typed, location, or an account identifier |
 | **Meta Platforms** | Measuring our own advertising (Section 2.2) | App installed, App opened, sign-up completed, purchase completed (product identifier and price), with app and device information and a random per-installation identifier — never photos, notes, text you typed, location, name, email, account identifier, or the device advertising identifier |
-| **PostHog** | Opt-in product analytics (Section 2.3) | Structured usage events, app/device info, and your account identifier — only after you opt in; never photos, label text, notes, feedback text, location, name, or email |
+| **PostHog** | Opt-in product analytics (Section 2.3) | Structured usage events, app/device info, and your account identifier, plus session replays of app screens (email, name, profile photo, passwords, and feedback text masked), only after you opt in. Events never include photos, label text, notes, feedback text, location, name, or email; replays may show on-screen artwork content and notes |
 | **Geoapify** | Finding museums and art venues near you | Your approximate device coordinates |
 | **OpenStreetMap (Overpass API)** | Fallback nearby-venue lookup | Your approximate device coordinates |
 | **Apple Maps Server API** | Fallback nearby-venue lookup | Your approximate device coordinates |
